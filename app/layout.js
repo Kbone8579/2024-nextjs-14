@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -19,10 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <div className="flex gap-2">
+        <Link href="/">홈</Link>
+        <Link href="/about">어바웃</Link>
+        <Link href="/pf">포트폴리오</Link>
+      </div>
+
         {children}
       </body>
     </html>
