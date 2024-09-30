@@ -1,18 +1,16 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+import localFont from "next/font/local";
+
+const pretendard = localFont({
+  src: "./../node_modules/pretendard/dist/web/variable/woff2/PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+  variable: "--font-pretendard",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -21,10 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="kr" className={`${pretendard.variable}`}>
+      <body className={pretendard.className}>s
       <div className="flex gap-2">
         <Link href="/">홈</Link>
         <Link href="/about">어바웃</Link>
