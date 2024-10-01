@@ -7,7 +7,7 @@ export default function Home() {
       <h1>홈 페이지!!!???asdsadsadsad</h1>
       <FontAwesomeIcon icon={faArrowUpWideShort} />
       <img src="/img/237-200x300.jpg" />
-      <video src="/video/video_1.mp4" autoplay muted loop />
+      <video src="/video/video_1.mp4" autoplay muted loop controls />
     </div>
   );
 }
