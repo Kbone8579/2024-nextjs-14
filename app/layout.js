@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="kr" className={`${pretendard.variable}`}>
-      <body className={pretendard.className}>s
+      <body className={pretendard.className}>
       <div className="flex gap-2">
         <Link href="/">홈</Link>
         <Link href="/about">어바웃</Link>
