@@ -6,6 +6,7 @@ export default function Home() {
     <div className="text-blue-500">
       <h1>홈 페이지!!!???asdsadsadsad</h1>
       <FontAwesomeIcon icon={faArrowUpWideShort} />
+      <img src="/img/237-200x300.jpg" />
     </div>
   );
 }
